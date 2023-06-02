@@ -7,7 +7,6 @@ import ru.job4j.app.dto.OrderDto;
 
 @Service
 @Slf4j
-
 public class KitchenService {
     @KafkaListener(topics = "job4j_orders")
     public void receiveOrder(OrderDto dto) {
